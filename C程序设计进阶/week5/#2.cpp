@@ -29,14 +29,21 @@ int main()
 	i行 j列
 	sum = i + j 在j列形成的数组中 
 	*/
-	
 	int *array = NULL;
 	array = (int*)calloc(col, sizeof(int));
-	int array_length = sizeof(array) / sizeof(array[0]);
+	for (int i=0; i<col; i++){
+		array[i] = i;
+	}
 //    int *pointer = NULL;
+
+    cout << "aaa" << endl;
     for (int i=0; i<col; i++){
-    	array[i] = i;
-    }
+    	cout << array[i] << endl;
+    } 
+    cout << "aaa" << endl;
+//    bool test = isvalueinarray(3, array, col);
+//    cout << "aaa" << endl;
+//    cout << test << endl;
 //    for (pointer=l; *pointer != '\0'; pointer++){
 //    	cout << *(pointer++) << endl;
 //    }
@@ -47,7 +54,7 @@ int main()
     for (int i=0; i<row; i++){
     	for (int j=0; j<col; j++){
     		int sum = i + j;
-    		bool check = isvalueinarray(sum, array, array_length);
+    		bool check = isvalueinarray(sum, array, col);
     		if (check)
     			res += matrix[i][j];
     	}
