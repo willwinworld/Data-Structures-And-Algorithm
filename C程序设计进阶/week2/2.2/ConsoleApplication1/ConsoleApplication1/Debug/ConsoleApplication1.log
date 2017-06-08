@@ -1,0 +1,4 @@
+﻿  1.cpp
+d:\c c++ project\c程序设计进阶\2.2\consoleapplication1\consoleapplication1\1.cpp(25): warning C4715: “kakutani_conjecture”: 不是所有的控件路径都返回值
+  ConsoleApplication1.vcxproj -> D:\C C++ Project\C程序设计进阶\2.2\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> D:\C C++ Project\C程序设计进阶\2.2\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)
