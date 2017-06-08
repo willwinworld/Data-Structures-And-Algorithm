@@ -1,9 +1,0 @@
-D:\C C++ Project\MyFirstC#\calculator\calculator\bin\Debug\calculator.exe.config
-D:\C C++ Project\MyFirstC#\calculator\calculator\bin\Debug\calculator.exe
-D:\C C++ Project\MyFirstC#\calculator\calculator\bin\Debug\calculator.pdb
-D:\C C++ Project\MyFirstC#\calculator\calculator\obj\Debug\calculator.csprojResolveAssemblyReference.cache
-D:\C C++ Project\MyFirstC#\calculator\calculator\obj\Debug\calculator.Form1.resources
-D:\C C++ Project\MyFirstC#\calculator\calculator\obj\Debug\calculator.Properties.Resources.resources
-D:\C C++ Project\MyFirstC#\calculator\calculator\obj\Debug\calculator.csproj.GenerateResource.Cache
-D:\C C++ Project\MyFirstC#\calculator\calculator\obj\Debug\calculator.exe
-D:\C C++ Project\MyFirstC#\calculator\calculator\obj\Debug\calculator.pdb
