@@ -26,7 +26,7 @@ struct zimu{  // 用于保存出现的字母及其个数
 };
 
 zimu appearZimu[501];  // 保存所有出现过的字母 
-
+/*核心算法！！！*/
 int count(char input){  // 对于字母，进行处理 
 	bool find = false;
 	for (int i = 0; i < k+1; i++){  // 出现过的字母，个数+1 
@@ -54,7 +54,7 @@ int main()
 	
 	zimu larggest = {' ', 0};
 	zimu second = {' ', 0};
-	
+	/*核心算法！！！*/ 
 	for (int i = 0; i < k + 1; i++){
 		if (appearZimu[i].time > larggest.time){
 			second = larggest;
