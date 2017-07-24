@@ -9,7 +9,7 @@ int main()
 		{0, -1}, {-1, 0}
 	};
 	
-	for (int i = 0; i < 4; ++i){
+	for (int i = 0; i < 4; ++i){  // i < 4 ÒòÎªdir[0] = {0, 1} dir[0][0] = 0 
 		cout << dir[i][0] << dir[i][1] << endl;
 	}
 	cout << '\n';

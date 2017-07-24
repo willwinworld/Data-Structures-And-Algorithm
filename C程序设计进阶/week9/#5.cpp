@@ -127,7 +127,7 @@ int bfs()
         {  
             int xx=top.x+dx[i];  
             int yy=top.y+dy[i];  
-            if(fun(xx,yy)==1 && vis[xx][yy]==0)  // (xx, yy)是一个合法节点 
+            if(fun(xx,yy)==1 && vis[xx][yy]==0)  // (xx, yy)是一个合法节点同时没有visit过 
             {  
                 vis[xx][yy]=1;  // 设置节点颜色 
                 Node node;  
