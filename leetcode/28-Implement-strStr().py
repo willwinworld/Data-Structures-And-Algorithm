@@ -47,4 +47,3 @@ if __name__ == '__main__':
     a = 3
     b = 2
     c = 0 if a > b else 1
-    
