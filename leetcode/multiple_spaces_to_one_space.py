@@ -12,3 +12,9 @@ for i in range(0, length):
         res.append(origin[i])
 test = ''.join(res)
 print(test)
+
+"""
+另外一种思路：通过比对没有空格的字符串来确定空格的所属长度
+A_BC__DE___F
+ABCDEF
+"""
