@@ -1,6 +1,5 @@
 #! python3
 # -*- coding: utf-8 -*-
-
 """
 [-2,1,-3,4,-1,2,1,-5,4]  # [4,-1,2,1]最大和sum=6
 找到相邻元素的最大和子串
@@ -14,12 +13,34 @@
 """
 
 
-# class Solution(object):
-#     def maxSubArray(self, nums):
-#         """
-#         :type nums: List[int]
-#         :rtype: int
-#         """
+class Solution(object):
+    """
+    divide and conquer
+
+    """
+    def maxSubArray(self, nums, low, high):
+        if low == high:
+            return nums[0]
+
+        mid = int((low + high) / 2)
+        left_max = -2147483648
+        sum = 0
+        for i in range(mid, low-1, -1):
+            sum += nums[i]
+            if sum > left_max:
+                left_max = sum
+
+        right_max = -2147483648
+        sum = 0
+        for i in range(mid+1, high+1, 1):
+            sum += nums[i]
+            if sum > right_max:
+                right_max = sum
+
+        max_left_right = max(self.maxSubArray(nums, low, mid), self.maxSubArray(nums, mid+1, high))
+        return max(max_left_right, left_max+right_max)
+
+
 def merge(l, r):
     final = []
     while l and r:
@@ -50,7 +71,12 @@ def kadane(a):
     return max_so_far
 
 if __name__ == '__main__':
-    test = mergeSort([-2,1,-3,4,-1,2,1,-5,4])
-    print(test)
-    res = kadane([-2,1,-3,4,-1,2,1,-5,4])  # [4,-1,2,1]
+    # test = mergeSort([-2,1,-3,4,-1,2,1,-5,4])
+    # print(test)
+    # res = kadane([-2,1,-3,4,-1,2,1,-5,4])  # [4,-1,2,1]
+    # print(res)
+    # for i in range(5, -1, -1):
+    #     print(i)
+    solution = Solution()
+    res = solution.maxSubArray([-2,1,-3,4,-1,2,1,-5,4], 0, 8)
     print(res)
