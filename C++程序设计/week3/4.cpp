@@ -23,8 +23,8 @@ class Complex{
 };
 
 int main(){
-	Complex c1(7, 8);
-	Complex c2 = 12;
+	Complex c1(7, 8); // 调用普通的构造函数
+	Complex c2 = 12; // 下面都分别调用了类型构造转换行数，但是在调用过程中有区别，对c2进行初始化
 	c1 = 9;  // 9被自动转换成一个临时Complex对象
 	cout << c1.real << "," << c1.imag << endl;
 	return 0;
