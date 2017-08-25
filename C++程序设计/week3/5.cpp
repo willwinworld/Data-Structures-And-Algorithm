@@ -82,10 +82,11 @@ void Func(){
 }
 int main(){
   Demo d4(4);
-  d4 = 6;
+  d4 = 6;  // 类型转换构造函数 
   cout << "main" << endl;
-  { Demo d5(5); }
+  { Demo d5(5); } // 初始作用域 
   Func();
   cout << "main ends" << endl;
   return 0;
+  // 先被构造的对象会最后被析构掉 
 }
