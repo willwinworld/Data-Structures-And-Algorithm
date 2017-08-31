@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
-/*
 
-*/
 class Base {
 public:
     int k; 
@@ -12,9 +10,13 @@ class Big  {
 public:
     int v; Base b;
 // 在此处补充你的代码, 请补足Sample类的成员函数，不能增加成员变量
-	Base(Base &b){
-		v(b.v);
-	} 
+/*
+所缺代码具有如下形式：
+Big ________________{ }
+Big ________________{ }
+*/
+	Big(int n):v(n), b(n){};  // 成员函数与封闭类以及初始化列表 
+	Big(Big &a):v(a.v), b(a.v){};
 };
 int main()  {
     Big a1(5);    Big a2 = a1;
