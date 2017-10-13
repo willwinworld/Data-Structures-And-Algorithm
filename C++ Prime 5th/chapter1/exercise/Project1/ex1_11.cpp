@@ -1,6 +1,6 @@
-#include <iostream>
-#include <stdio.h>
-using namespace std;
+//#include <iostream>
+//#include <stdio.h>
+//using namespace std;
 
 
 //void bubble(int a[], int n) {
