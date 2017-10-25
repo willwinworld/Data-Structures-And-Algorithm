@@ -13,7 +13,7 @@ int main(void) {
 	cout << i - i2 << endl;
 	cout << i - u << endl;
 	cout << u - i << endl;*/
-	int i, &ri = i;
+	int i, &ri = i;  // ÒýÓÃ
 	i = 5; ri = 10;
 	cout << i << " " << ri << endl;
 	getchar();
