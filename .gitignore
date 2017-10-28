@@ -98,3 +98,11 @@ tasks/result/*
 *.swp
 web/upload/*
 *.png
+
+.vs/*
+*.exe
+*.ilk
+*.pdb
+.Debug/*
+*.vcxproj
+*.vcxproj.filters

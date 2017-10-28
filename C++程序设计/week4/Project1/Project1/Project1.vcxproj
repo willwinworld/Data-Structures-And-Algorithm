@@ -114,6 +114,7 @@
     <ClCompile Include="part1.cpp" />
     <ClCompile Include="part1_example1.cpp" />
     <ClCompile Include="part1_example2.cpp" />
+    <ClCompile Include="part2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
