@@ -14,9 +14,18 @@ next
 */
 class Array2 {
 private:
+	int * a;
 	int row, col;
 public:
-	
+	Array2() { a = NULL; }
+	Array2(int i_, int j_) {
+		i = i_;
+		j = j_;
+		a = new int[i*j];
+	}
+	Array2(Array2 &t) {
+
+	}
 };
 
 int main() {

@@ -39,13 +39,15 @@ def transform_to_numpy_data():
     return init_array, label
 
 
-def knn(test_data, init_array):
+def knn(test_data, init_array, label):
     """
     :param test_data: array input
     :param init_array:
+    :param label
     :return:
     """
     distance_result = []
+    category_result = []
     row_length = init_array.shape[0]
     for row_index in range(row_length):
         train_data = init_array[row_index]
@@ -55,8 +57,10 @@ def knn(test_data, init_array):
             distance = math.sqrt((train_data[0] - test_data[0])**2+(train_data[1] - test_data[1])**2+(train_data[2] - test_data[2])**2)
             print(distance)
             distance_result.append(distance)
+            category = label[row_index]
+            category_result.append(category)
     sorted_result = sorted(distance_result)
-    return sorted_result
+    return sorted_result, category_result
 
 
 def main():
@@ -71,11 +75,29 @@ def main():
     # print(test_data)
     # print(type(test_data))
     init_array, label = transform_to_numpy_data()
-    res = knn(test_data, init_array)
-    print(res)
-    print(len(res))
+    print(label)
+    distance_res, category_res = knn(test_data, init_array, label)
+    print('@@@')
+    print(category_res)
+    print('@@@')
+    print(distance_res, category_res)
+    print(len(distance_res))
     """
     取前20个结果
+    """
+    top_twenty_distance_res = distance_res[0:20]
+    top_twenty_category_res = category_res[0:20]
+    print(top_twenty_distance_res)
+    print(top_twenty_category_res)
+    one_count = top_twenty_category_res.count('1')
+    two_count = top_twenty_category_res.count('2')
+    three_count = top_twenty_category_res.count('3')
+    print(one_count)
+    print(two_count)
+    print(three_count)
+    """
+    由于算出one_count = 12, two_count = 3, three_count = 5所以最终预测类别为1
+    最终结果也确实是对的
     """
 
 
