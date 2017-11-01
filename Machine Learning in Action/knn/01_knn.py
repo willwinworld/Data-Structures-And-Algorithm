@@ -61,7 +61,7 @@ def dating_class_test():
     m = norm_mat.shape[0]  # 矩阵的行数
     num_test_vec = int(m*ho_ratio)
     print('num_test_vec=', num_test_vec)
-    
+
 
 def main():
     return_mat, class_label_vector = file2matrix('datingTestSet2.txt')
