@@ -16,7 +16,3 @@ typedef struct {
 	int length;  // 线性表当前长度
 }Sqlist;
 
-InitList(*L);  // 初始化操作，建立一个空的线性表
-ListEmpty(L);  // 若线性表为空，返回true, 否则返回false
-ClearList(*L); // 将线性表清空
-GetElem(L, i, *e); // 将线性表L中的第i个位置元素赋给

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "arraylist.h"
+#include "线性表.h"
 
 /*
 数组的长度：存放线性表的存储空间的长度，存储分配后这个量一般是不变的
