@@ -14,11 +14,3 @@ typedef struct Node {
 typedef struct Node *LinkList;  // ∂®“ÂLinkList
 
 #endif
-
-
-
-
-
-
-
-#endif

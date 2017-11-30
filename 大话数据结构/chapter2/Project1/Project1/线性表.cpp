@@ -49,3 +49,4 @@ Status ListDelete(Sqlist *L, int i, ElemType *e) {
 	L->length--;
 	return OK;
 }
+
