@@ -1,5 +1,4 @@
-#ifndef _LINK_LIST_
-#define _LINK_LIST_
+#pragma once
 #define OK 1
 #define ERROR 0
 #define TRUE 1
@@ -12,5 +11,3 @@ typedef struct Node {
 	struct Node *next;
 } Node;
 typedef struct Node *LinkList;  // ∂®“ÂLinkList
-
-#endif
